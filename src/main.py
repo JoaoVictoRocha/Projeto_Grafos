@@ -14,7 +14,7 @@ for _, linha in df.iterrows():
     G.add_edge(orgao_superior, empresa, weight=valor_gasto)
 
 # Criação do arquivo .gexf
-nx.write_gexf(G, "../rsc/Grafo.gexf")
+nx.write_gexf(G, "../rsc/grafo.gexf")
 
 # 1. Grau de centralidade
 centralidade_grau = nx.degree_centrality(G)
